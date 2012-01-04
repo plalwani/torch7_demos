@@ -1,0 +1,47 @@
+Before you can run these codes on your machine, you need to install torch 7 and lua on your Unix machine / Mac OS X as directed below:
+
+Required Unix dependencies:
+
+gcc: gnu C Compiler
+
+g++: gnu C++ compiler
+
+git: version control system for handling projects online, required for a github account usage
+
+cmake: controls software compilation process of configuration files / automates the installation process when possible
+
+wget: Utility to receive files from the web using either http(s) or ftp protocol
+
+libreadline-dev: Provides a consistent user interface for recalling lines of previously typed input
+
+libqt4-core: Qt is a cross platform C++ application frame. provides a set of widgets with gui functionality
+
+libqt4-dev: Qt is a cross platform C++ application frame. provides a set of widgets with gui functionality
+
+ffmpeg: Multimedia player, server, encoder and transcoder
+
+gnuplot: command line driven plotting program
+
+libpng: If required, can be retrieved from:- http://www.libpng.org/pub/png/libpng.html
+
+libjpeg: If required, can be retrieved from:- http://libjpeg.sourceforge.net/
+
+Installing above dependencies:
+
+    #sudo apt-get install g++ gcc libreadline-dev cmake wget
+    #sudo apt-get install libqt4-core libqt4-gui libqt4-dev
+    #sudo apt-get install ffmpeg gnuplot
+
+Installing Lua, Luarocks and torch 7:
+
+    #git clone https://github.com/clementfarabet/lua4torch
+    #cd lua4torch
+    #make install PREFIX=/usr/local
+    #Luarocks install torch
+
+Installing extra packages:
+
+    #sudo luarocks install image
+    #sudo luarocks install nnx
+    #Sudo luarocks install camera
+    #Sudo luarocks install ffmpeg
